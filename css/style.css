@@ -3,5 +3,16 @@
     column-count: 2;
 }
 
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    overflow-x: hidden;
+    min-height: 100vh;
+    height: 100%;
+    position: relative;
+    background: #222222;
+    
+}
+
 
 

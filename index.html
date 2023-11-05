@@ -7,52 +7,100 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
 	<link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" href="../projeto-site-senac/css/reset.css">
-    <link rel="stylesheet" href="../projeto-site-senac/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a489858462.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="../projeto-site-senac/css/style.css">
+    
 </head>
 <body>
     <main>
         <section>
             <!-- Conteúdo -->
             <div class="container">
-                <div class="left-div">
-                   <nav>
-                    <ul>
-                        <li class="left-icons">
-                            <a href="./assets/img/constructive_bg_01.jpg"></a>
-                            <i class="fas fa-home tm-nav-fa-icon"></i>
-                            <span>Introduction</span>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="./assets/img/constructive_bg_02.jpg"></a>
-                            <i class="fas fa-map tm-nav-fa-icon"></i>
-                            <span>Our Products</span>
-                        </li>    
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="./assets/img/constructive_bg_03.jpg"></a>
-                            <i class="fas fa-users tm-nav-fa-icon"></i>
-                            <span>Our Company</span>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <a href="./assets/img/constructive_bg_04.jpg"></a>
-                            <i class="fas fa-comments tm-nav-fa-icon"></i>
-                            <span>Contact Us</span>
-                        </li>
-                    </ul>
-                   </nav>
+                <div class="row">
+                    <div class="col-1">
+                        <nav>
+                            <ul ul style="list-style: none;">
+                                <li class="left-icons">
+                                    <!-- <a href="./assets/img/constructive_bg_01.jpg"></a>
+                                    <i class="fas fa-home tm-nav-fa-icon"></i>
+                                    <span>Introduction</span>-->
+                                    <a href="./assets/img/constructive_bg_01.jpg" id="tmNavLink1" class="scrolly active" data-bg-img="#" data-page="#tm-section-1">
+                                        <i class="fas fa-home tm-nav-fa-icon"></i>
+                                        <span>Introduction</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul ul style="list-style: none;">
+                                <li>
+                                    <a href="./assets/img/constructive_bg_02.jpg">
+                                        <i class="fas fa-map tm-nav-fa-icon"></i>
+                                        <span>Our Products</span>
+                                    </a>
+                                </li>    
+                            </ul>
+                            <ul ul style="list-style: none;">
+                                <li>
+                                    <a href="./assets/img/constructive_bg_03.jpg">
+                                        <i class="fas fa-users tm-nav-fa-icon"></i>
+                                        <span>Our Company</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul ul style="list-style: none;">
+                                <li>
+                                    <a href="./assets/img/constructive_bg_04.jpg">
+                                        <i class="fas fa-comments tm-nav-fa-icon"></i>
+                                        <span>Contact Us</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>                   
                 </div>
-                <div class="right-div"></div>
-            </div>
+            </div>    
+        </section>        
+                <!-- section 1 -->
+                <div class="col-2">
+                    <section id="section-1" class="right-section">
+						<div class="ml-auto">
+							<header class="mb-4"><h1 class="tm-text-shadow">Constructive Design</h1></header>
+							<p class="mb-5 tm-font-big">Aenean fermentum vestibulum ipsum, ut pretium erat sodales sodales. Pellentesque quis orci vitae dui commodo sodales et ut quam. Etiam vitae egestas purus, ut malesuada enim.</p>
+							<a href="#" class="btn tm-btn tm-font-big" data-nav-link="#tmNavLink2">Continue...</a> 
+							<!-- data-nav-link holds the ID of nav item, which means this link should behave the same as that nav item  -->
+						</div>
+					</section>
+
+                </div>                
             
-        </section>
+            
+        
     </main>
+    
+
+
+    <!-- section 2 -->
+    <section id="tm-section-2" class="tm-section tm-section-carousel">
+        <div>
+            <header class="mb-4"><h2 class="tm-text-shadow">Our Products</h2></header>		            
+            <div class="tm-img-container">
+                <div class="tm-img-slider">
+                    <a href="./assets/img/gallery-img-01.jpg" class="tm-slider-img"><img src="./assets/img/gallery-img-01-tn.jpg" alt="Image" class="img-fluid"></a>
+                    <a href="./assets/img/gallery-img-02.jpg" class="tm-slider-img"><img src="./assets/img/gallery-img-02-tn.jpg" alt="Image" class="img-fluid"></a>
+                    <a href="./assets/img/gallery-img-03.jpg" class="tm-slider-img"><img src="./assets/img/gallery-img-03-tn.jpg" alt="Image" class="img-fluid"></a>
+                    <a href="./assets/img/gallery-img-04.jpg" class="tm-slider-img"><img src="./assets/img/gallery-img-04-tn.jpg" alt="Image" class="img-fluid"></a>
+                    <a href="./assets/img/gallery-img-05.jpg" class="tm-slider-img"><img src="./assets/img/gallery-img-05-tn.jpg" alt="Image" class="img-fluid"></a>
+                    <a href="./assets/img/gallery-img-06.jpg" class="tm-slider-img"><img src="./assets/img/gallery-img-06-tn.jpg" alt="Image" class="img-fluid"></a>
+                </div>
+            </div>		            		          
+        </div>       		          	
+    </section>
+
+    <!-- section 3 -->
+
+    <!-- section 4 -->
     
 </body>
 </html>
