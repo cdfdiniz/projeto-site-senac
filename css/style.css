@@ -1,5 +1,8 @@
 
-
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
 
 body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -12,17 +15,82 @@ body {
     position: relative;
     background: #222222;
     display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.content {
+    width: 75%;
+    padding: 20px;
+}
+    
+
 li {
     list-style-type: none;
+    text-align: -webkit-match-parent;
+}
+
+
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+a:-webkit-any-link:active {
+    color: webkit activelink;
+}
+
+/*Ícones da parte esquerda*/
+.fa, .fas {
+    font-weight: 900;
+}
+
+
+.fa, .fab, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    
+}
+
+.tm-nav-fa-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 8px;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.tm-main-nav {
+    font-size: 1.4rem;
 }
 
 .tm-main-nav a {
     background-image: url(../assets/img/nav-item.png);
     background-repeat: no-repeat;
     background-position: left bottom;
+    color: white;
+    -webkit-box-align: center;
     display: flex;
     align-items: center;
     margin: 20px 0 40px 0;
@@ -30,6 +98,37 @@ li {
     padding-right: 80px;
 }
 
+.tm-main-nav a:hover, .tm-main-nav a:focus, .tm-main-nav a.active {
+    background-image: url(../assets/img/nav-item-highlight.png);
+    color: #33ccff;
+    text-decoration: none;
+}
+
+.tm-main-nav li {
+    list-style: none;
+}
+
+
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.tm-copyright-text {
+    display: inline-block;
+    padding: 5px 30px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+p {
+    font-size: 1rem;
+    line-height: 2.2;
+    margin-top: 0;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
 
 
 
