@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
-	<link rel="stylesheet" href="./css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://kit.fontawesome.com/a489858462.js" crossorigin="anonymous"></script>   
 
     <title>Projeto Site</title>
@@ -22,25 +22,25 @@
                 <nav id="tmMainNav" class="tm-main-nav">
                     <ul>
                         <li>
-                            <a href="#intro" id="tmNavLink1" class="scrolly-active" data-bg-img="constructive_bg_01.jpg" onclick="showSection('tm-section-1')">
+                            <a href="#intro" id="tmNavLink1" class="scrolly-active" data-bg-img="constructive_bg_01.jpg" onclick="showSection('tm-section')">
                                 <i class="fas fa-home tm-nav-fa-icon"></i>
                                 <span>Introduction</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#products" id="tmNavLink2" class="scrolly" data-bg-img="constructive_bg_02.jpg" data-page="#tm-section-2">
+                            <a href="#products" id="tmNavLink2" class="scrolly" data-bg-img="constructive_bg_02.jpg" data-page="#tm-section-2" onclick="showSection('tm-section-2')">
                                 <i class="fas fa-map tm-nav-fa-icon"></i>
                                 <span>Our Products</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#company" class="scrolly" data-bg-img="constructive_bg_03.jpg" data-page="#tm-section-3">
+                            <a href="#company" class="scrolly" data-bg-img="constructive_bg_03.jpg" data-page="#tm-section-3" onclick="showSection('tm-section-3')">
                                 <i class="fas fa-users tm-nav-fa-icon"></i>
                                 <span>Our Company</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#contact" class="scrolly" data-bg-img="constructive_bg_04.jpg" data-page="#tm-section-4">
+                            <a href="#contact" class="scrolly" data-bg-img="constructive_bg_04.jpg" data-page="#tm-section-4" onclick="showSection('tm-section-4')">
                                 <i class="fas fa-comments tm-nav-fa-icon"></i>
                                 <span>Contact Us</span>
                             </a>
@@ -50,11 +50,10 @@
             </div>
         </div>
 		
-
         <div class="content">
             <!-- Sections do conteúdo aqui -->
             <!-- section 1 -->
-					<section id="tm-section-1" class="tm-section">
+					<section id="tm-section" class="tm-section">
 						<div class="ml-auto">
 							<header class="mb-4"><h1 class="tm-text-shadow">Constructive Design</h1></header>
 							<p class="mb-5 tm-font-big">Aenean fermentum vestibulum ipsum, ut pretium erat sodales sodales. Pellentesque quis orci vitae dui commodo sodales et ut quam. Etiam vitae egestas purus, ut malesuada enim.</p>
@@ -65,7 +64,7 @@
 
                     <!-- section 2 -->
 					<section id="tm-section-2" class="tm-section tm-section-carousel">
-						<div>
+						<div class="ml-auto-2">
 							<header class="mb-4"><h2 class="tm-text-shadow">Our Products</h2></header>		            
 							<div class="tm-img-container">
 								<div class="tm-img-slider">
@@ -171,15 +170,13 @@
 		
 		- Design: <a rel="nofollow" href="https://www.tooplate.com">Tooplate</a></p>
 	</footer>
+<!-- 	
 	<div id="preload-01"></div>
 	<div id="preload-02"></div>
 	<div id="preload-03"></div>
-	<div id="preload-04"></div>
+	<div id="preload-04"></div> -->
 
-    <script>
-        // JavaScript aqui
-    </script>
+	<script src="/assets/script/script.js"></script>
+	
 </body>
-    
-
 </html>

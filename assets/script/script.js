@@ -7,5 +7,5 @@ function showSection(sectionId) {
     var selectedSection = document.getElementById(sectionId);
     if (selectedSection) {
         selectedSection.style.display = 'block';
-    }
+    } 
 }
