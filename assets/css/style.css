@@ -274,6 +274,109 @@ p {
     align-items: center;
 }
 
+.tm-contact-box-pad {
+    padding: 60px 55px;
+}
+
+.tm-bg-transparent-black {
+    background-color: rgba(0,0,0,0.25);
+}
+
+.col-md-6.tm-contact-col {
+    margin-bottom: 0;
+}
+
+.col-md-6,.col-sm-12 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+    background: transparent;
+    border-color: white;
+    border-radius: 0px;
+    color: white;
+    font-weight: 300;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.form-control:hover, :focus {
+    border-color: #33ccff;
+    outline: none;
+}
+
+input {
+    border: 1px solid white;
+    overflow: auto;
+    resize: vertical;
+    touch-action: manipulation;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+input::placeholder {
+    color: white;
+}
+
+input:hover, :focus {
+    border-color: #33ccff;
+    outline: none;
+    
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+    touch-action: manipulation;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+  
+}
+
+textarea::placeholder {
+    color: white;
+}
+
+
+.tm-btn-submit {
+    border-radius: 0;
+    display: block;
+    padding: 15px 43px;
+    margin-left: 40%;
+}
+
+.tm-btn {
+    
+    font-size: 1.3rem;
+    font-weight: 300;
+    background: transparent;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.contact-form {
+    justify-content: center;
+    align-items: center;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    
+}
+
 .form-control:focus {
     background: transparent;
     color: white;
