@@ -477,6 +477,87 @@ button, input, optgroup, select, textarea {
     text-decoration: none;
 }
 
+/*Página Our Products*/
+.tm-section-carousel {
+    height: 520px;
+    width: 935px;
+    padding: 12px;
+    margin: 12px;
+    border-radius: 20px;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    
+}
+
+.img-fluid {
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.tm-section-carousel .slide .img-fluid {
+    height: 100%;
+    width: 100%;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 160px;
+    left: 850px;
+    display: flex;
+}
+
+.bar {
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: .5s ease;
+
+}
+
+.bar:hover {
+    background-color: #FFF;
+
+}
+
+input {
+    display: none;
+    position: relative;
+}
+
+.tm-img-container {
+    /*div das imagens*/
+    width: 17%;
+    transition: .6s;
+
+    
+}
+
+.tm-img-slider {
+    display: flex;
+    width: 600%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+
 
 
 footer a { color: white; }
