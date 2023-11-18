@@ -34,13 +34,13 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#company" class="scrolly" data-bg-img="constructive_bg_03.jpg" data-page="#tm-section-3" onclick="showSection('tm-section-3')">
+                            <a href="#company" id="tmNavLink3" class="scrolly" data-bg-img="constructive_bg_03.jpg" data-page="#tm-section-3" onclick="showSection('tm-section-3')">
                                 <i class="fas fa-users tm-nav-fa-icon"></i>
                                 <span>Our Company</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#contact" class="scrolly" data-bg-img="constructive_bg_04.jpg" data-page="#tm-section-4" onclick="showSection('tm-section-4')">
+                            <a href="#contact" id="tmNavLink4" class="scrolly" data-bg-img="constructive_bg_04.jpg" data-page="#tm-section-4" onclick="showSection('tm-section-4')">
                                 <i class="fas fa-comments tm-nav-fa-icon"></i>
                                 <span>Contact Us</span>
                             </a>
@@ -65,16 +65,31 @@
                     <!-- section 2 -->
 					<section id="tm-section-2" class="tm-section tm-section-carousel">
 						<div class="ml-auto-2">
-							<header class="mb-4"><h2 class="tm-text-shadow">Our Products</h2></header>		            
-							<div class="tm-img-container">
+							<header class="mb-4"><h2 class="tm-text-shadow">Our Products</h2></header>					          
+							<div class="tm-img-container">								
 								<div class="tm-img-slider">
-									<a href="./assets/img/gallery-img-01.jpg" class="tm-slider-img"><img src="./assets/img/gallery-img-01-tn.jpg" alt="Image" class="img-fluid"></a>
+									<a href="./assets/img/gallery-img-01.jpg" class="tm-slider-img"><img src="./assets/img/gallery-img-01-tn.jpg" alt="Image" class="img-fluid s1"></a>
 									<a href="./assets/img/gallery-img-02.jpg" class="tm-slider-img"><img src="./assets/img/gallery-img-02-tn.jpg" alt="Image" class="img-fluid"></a>
 									<a href="./assets/img/gallery-img-03.jpg" class="tm-slider-img"><img src="./assets/img/gallery-img-03-tn.jpg" alt="Image" class="img-fluid"></a>
 									<a href="./assets/img/gallery-img-04.jpg" class="tm-slider-img"><img src="./assets/img/gallery-img-04-tn.jpg" alt="Image" class="img-fluid"></a>
 									<a href="./assets/img/gallery-img-05.jpg" class="tm-slider-img"><img src="./assets/img/gallery-img-05-tn.jpg" alt="Image" class="img-fluid"></a>
 									<a href="./assets/img/gallery-img-06.jpg" class="tm-slider-img"><img src="./assets/img/gallery-img-06-tn.jpg" alt="Image" class="img-fluid"></a>
 								</div>
+								<input type="radio" class="input" name="slide" id="slide1" checked>
+									<input type="radio" class="input" name="slide" id="slide2">
+									<input type="radio" class="input" name="slide" id="slide3">
+									<input type="radio" class="input" name="slide" id="slide4">
+									<input type="radio" class="input" name="slide" id="slide5">
+									<input type="radio" class="input" name="slide" id="slide6">  
+								<div class="navigation">
+									<label class="bar" for="slide1"></label>
+									<label class="bar" for="slide2"></label>
+									<label class="bar" for="slide3"></label>
+									<label class="bar" for="slide4"></label>
+									<label class="bar" for="slide5"></label>
+									<label class="bar" for="slide6"></label>
+								</div>
+								
 							</div>		            		          
 						</div>       		          	
 					</section>
