@@ -13,6 +13,7 @@ function showSection(sectionId) {
     var selectedSection = document.getElementById(sectionId);
     if (selectedSection) {
         selectedSection.style.display = 'block';
+<<<<<<< HEAD
 
         // Adicionando a classe "active" à seção selecionada
         sections.forEach(function(section) {
@@ -50,3 +51,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+=======
+    } 
+}
+
+let contador = 1;
+
+setInterval(function(){
+    document.getElementById('slide' + contador).checked = true;
+    contador ++;
+
+    if(contador > 5) {
+        contador = 1;
+    }
+}, 3000);
+>>>>>>> 1d4d40395352531e4cb15005f7d0167cc7099ef2
