@@ -53,18 +53,9 @@ body {
 /*Oculta a página da direita*/
 .tm-section {
     display: none;
-    width: 100%;
-    box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 /*Parte esquerda*/
-=======
-.tm-section.active {
-    width: 80%; /* ou qualquer largura desejada */
-}
-
->>>>>>> c8ffc8a8cbc8c0d9f108bef0076accb733b4b0d6
 .sidebar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -154,7 +145,6 @@ p {
     height: 100px;
 }
 
-<<<<<<< HEAD
 .media-body {
     display: flex;
     flex-direction: column;
@@ -162,8 +152,6 @@ p {
     text-align: center;
 }
 
-=======
->>>>>>> c8ffc8a8cbc8c0d9f108bef0076accb733b4b0d6
 .media-tm-bg-transparent {
     padding: 30px;
 }
@@ -172,7 +160,6 @@ p {
     align-items: center;
 }
 
-<<<<<<< HEAD
 .fina {
     margin-top: 0px;
     margin-left: 240px;
@@ -221,37 +208,6 @@ p {
     margin-left: auto;
     padding: 2px;
     margin: 50px 50px 50px 15px;
-=======
-#tm-section-3 {
-    justify-content: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 150px;
-    margin: 50px 50px 50px 15px;
-}
-
-.tm-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-item-align: stretch;
-    align-self: stretch;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 50px 10%;
-    width: 100%;
-    position: relative;
-}
-
-.row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: auto;
-    margin-left: auto;
->>>>>>> c8ffc8a8cbc8c0d9f108bef0076accb733b4b0d6
 }
 
 .tm-main-nav {
@@ -429,10 +385,6 @@ input::placeholder {
     color: white;
 }
 
-.navigation {
-    margin-top: 100%;
-}
-
 input:hover, :focus {
     border-color: #33ccff;
     outline: none;
@@ -584,11 +536,7 @@ button, input, optgroup, select, textarea {
 }
 
 /*Página Our Products*/
-<<<<<<< HEAD
 /*.tm-section-carousel {
-=======
-.tm-section-carousel {
->>>>>>> c8ffc8a8cbc8c0d9f108bef0076accb733b4b0d6
     height: 520px;
     width: 935px;
     padding: 12px;
@@ -599,7 +547,6 @@ button, input, optgroup, select, textarea {
     left: 30%;
     
 }
-<<<<<<< HEAD
 */
 
 
@@ -719,169 +666,7 @@ input {
     margin-left: -50px;
 }
 
-=======
-<<<<<<< HEAD
-=======
->>>>>>> c8ffc8a8cbc8c0d9f108bef0076accb733b4b0d6
 
-.img-fluid {
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-}
-
-.tm-section-carousel .slide .img-fluid {
-    height: 100%;
-    width: 100%;
-}
-
-.navigation {
-    position: absolute;
-    bottom: 160px;
-    left: 850px;
-    display: flex;
-}
-
-.bar {
-    width: 15px;
-    height: 15px;
-    border: 2px solid white;
-    margin: 6px;
-    border-radius: 15px;
-    cursor: pointer;
-    transform: .5s ease;
-
-}
-
-.bar:hover {
-    background-color: #FFF;
-
-}
-
-input {
-    display: none;
-    position: relative;
-}
-
-.tm-img-container {
-    /*div das imagens*/
-    width: 17%;
-    transition: .6s;
-
-    
-}
-
-.tm-img-slider {
-    display: flex;
-    width: 600%;
-    height: 100%;
-}
-
-#slide1:checked ~ .s1 {
-    margin-left: 0;
-}
-
-#slide2:checked ~ .s1 {
-    margin-left: -20%;
-}
-
-#slide3:checked ~ .s1 {
-    margin-left: -40%;
-}
-
-#slide4:checked ~ .s1 {
-    margin-left: -60%;
-}
-
-
->>>>>>> 1d4d40395352531e4cb15005f7d0167cc7099ef2
-
-.img-fluid {
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    align-items: baseline;
-}
-
-.tm-section-carousel .tm-img-container {
-    width: 100%;
-    align-items: center;
-}
-
-.tm-section-carousel .slide .img-fluid {
-    height: 100%;
-    width: 100%;
-}
-
-.navigation {
-    position: absolute;
-    align-items: left;
-    bottom: -60px;
-    text-align: auto;
-    left: 850px;
-    display: flex;
-}
-
-.bar {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: #afa8a8;
-    margin: 0 5px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.bar:hover {
-    background-color: #FFF;
-
-}
-
-input {
-    display: none;
-}
-
-.tm-img-container {
-    /*div das imagens*/
-    overflow: hidden;
-       
-}
-
-/*Adicionado Carla*/
-.tm-img-slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    flex-direction: row;
-}
-
-.tm-slider-img {
-    flex: 0 0 33.333%;
-    transition: transform 0.5s ease-in-out;
-}
-
-
-#slide1:checked ~ .tm-img-container .tm-img-slider {
-    transform: translateX(0);
-}
-
-#slide2:checked ~ .tm-img-container .tm-img-slider {
-    transform: translateX(-33.333%);
-}
-
-#slide3:checked ~ .tm-img-container .tm-img-slider {
-    transform: translateX(-66.666%);
-}
-
-#slide4:checked ~ .tm-img-container .tm-img-slider {
-    transform: translateX(-100%);
-}
-
-#slide5:checked ~ .tm-img-container .tm-img-slider {
-    transform: translateX(-133.333%);
-}
-
-#slide6:checked ~ .tm-img-container .tm-img-slider {
-    transform: translateX(-166.66%);
-}
 
 footer a { color: white; }
 
