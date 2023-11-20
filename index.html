@@ -14,12 +14,14 @@
 </head>
 
 <body>
-    <!-- Page Content -->
+    <!-- Conteúdo da página -->
     <div class="container tm-main">
+		<!-- Barra lateral -->
         <div class="sidebar">
             <button id="tmMainNavToggle" class="menu-icon">&#9776;</button>
             <div class="inner">
                 <nav id="tmMainNav" class="tm-main-nav">
+					<!-- ... (Conteúdo da barra lateral) ... -->
                     <ul>
                         <li>
                             <a href="#intro" id="tmNavLink1" class="scrolly-active" data-bg-img="constructive_bg_01.jpg" onclick="showSection('tm-section')">
@@ -49,84 +51,123 @@
                 </nav>
             </div>
         </div>
-		
+		<!-- Conteúdo principal -->
         <div class="content">
-            <!-- Sections do conteúdo aqui -->
-            <!-- section 1 -->
+					<!-- Sections do conteúdo aqui -->
+					<!-- section 1 -->
 					<section id="tm-section" class="tm-section">
+						<!-- ... (Conteúdo da seção 1) ... -->
 						<div class="ml-auto">
 							<header class="mb-4"><h1 class="tm-text-shadow">Constructive Design</h1></header>
 							<p class="mb-5 tm-font-big">Aenean fermentum vestibulum ipsum, ut pretium erat sodales sodales. Pellentesque quis orci vitae dui commodo sodales et ut quam. Etiam vitae egestas purus, ut malesuada enim.</p>
 							<a href="#" class="btn tm-btn tm-font-big" data-nav-link="#tmNavLink2">Continue...</a> 
-							<!-- data-nav-link holds the ID of nav item, which means this link should behave the same as that nav item  -->
 						</div>
 					</section>
 
                     <!-- section 2 -->
+					<!-- ... (Conteúdo da seção 2) ... -->
+					<!-- Seção com o carrossel de imagens -->
 					<section id="tm-section-2" class="tm-section tm-section-carousel">
 						<div class="ml-auto-2">
-							<header class="mb-4"><h2 class="tm-text-shadow">Our Products</h2></header>		            
+							<header class="mb-4"><h2 class="tm-text-shadow">Our Products</h2></header>
 							<div class="tm-img-container">
-								<div class="tm-img-slider">
-									<a href="./assets/img/gallery-img-01.jpg" class="tm-slider-img"><img src="./assets/img/gallery-img-01-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="./assets/img/gallery-img-02.jpg" class="tm-slider-img"><img src="./assets/img/gallery-img-02-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="./assets/img/gallery-img-03.jpg" class="tm-slider-img"><img src="./assets/img/gallery-img-03-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="./assets/img/gallery-img-04.jpg" class="tm-slider-img"><img src="./assets/img/gallery-img-04-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="./assets/img/gallery-img-05.jpg" class="tm-slider-img"><img src="./assets/img/gallery-img-05-tn.jpg" alt="Image" class="img-fluid"></a>
-									<a href="./assets/img/gallery-img-06.jpg" class="tm-slider-img"><img src="./assets/img/gallery-img-06-tn.jpg" alt="Image" class="img-fluid"></a>
+								<div class="tm-img-slider" id="carousel">
+									<div class="tm-slider-item">
+										<a href="./assets/img/gallery-img-01.jpg" class="tm-slider-img" onclick="openLightbox(1)"><img src="./assets/img/gallery-img-01-tn.jpg" alt="Image" class="img-fluid s1"></a>
+									</div>
+									<div class="tm-slider-item">
+										<a href="./assets/img/gallery-img-02.jpg" class="tm-slider-img" onclick="openLightbox(2)"><img src="./assets/img/gallery-img-02-tn.jpg" alt="Image" class="img-fluid"></a>
+									</div>
+									<div class="tm-slider-item">
+										<a href="./assets/img/gallery-img-03.jpg" class="tm-slider-img" onclick="openLightbox(3)"><img src="./assets/img/gallery-img-03-tn.jpg" alt="Image" class="img-fluid"></a>
+									</div>
+									<div class="tm-slider-item">
+										<a href="./assets/img/gallery-img-04.jpg" class="tm-slider-img"><img src="./assets/img/gallery-img-04-tn.jpg" alt="Image" class="img-fluid"></a>
+									</div>
+									<div class="tm-slider-item">
+										<a href="./assets/img/gallery-img-05.jpg" class="tm-slider-img"><img src="./assets/img/gallery-img-05-tn.jpg" alt="Image" class="img-fluid"></a>
+									</div>
+									<div class="tm-slider-item">
+										<a href="./assets/img/gallery-img-06.jpg" class="tm-slider-img"><img src="./assets/img/gallery-img-06-tn.jpg" alt="Image" class="img-fluid"></a>
+									</div>
+													
 								</div>
+									<input type="radio" class="input" name="slide" id="slide1" checked>
+									<input type="radio" class="input" name="slide" id="slide2">
+									<input type="radio" class="input" name="slide" id="slide3">
+									<input type="radio" class="input" name="slide" id="slide4">
+									<input type="radio" class="input" name="slide" id="slide5">
+									<input type="radio" class="input" name="slide" id="slide6">
+								<div class="navigation">
+									<label class="bar" for="slide1"></label>
+									<label class="bar" for="slide2"></label>
+									<label class="bar" for="slide3"></label>
+									<label class="bar" for="slide4"></label>
+									<label class="bar" for="slide5"></label>
+																	
+									
+								</div>
+									
 							</div>		            		          
-						</div>       		          	
+						</div> 
+					   		          	
 					</section>
+					
 
                     <!-- section 3 -->
-					<section id="tm-section-3" class="tm-section">						
-						<div class="row mb-4">
-							<header class="col-xl-12"><h2 class="tm-text-shadow">Our Company</h2></header>		
-						</div>
-						<div class="row">
-							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
-								<div class="media tm-bg-transparent-black tm-border-white">
-									<i class="fab fa-apple tm-icon-circled tm-icon-media"></i>
-									<div class="media-body">
-										<h3>HTML Templates</h3>
-										<p>We provide a variety of templates for you at no cost. Please spread a word about <a href="https://plus.google.com/+tooplate" target="_parent">Tooplate</a> website. Thank you.</p>	
+					<div class="fina">
+						<section id="tm-section-3" class="tm-section">	
+							<!-- ... (Conteúdo da seção 3) ... -->					
+							<div class="row mb-4">
+								<header class="col-xl-12"><h2 class="tm-text-shadow">Our Company</h2></header>		
+							</div>
+							<div class="row">
+								<div class="colunas mb-4">
+									<div class="cai media tm-bg-transparent-black tm-border-white">
+										<i class="icone fab fa-apple tm-icon-circled tm-icon-media"></i>
+										<div class="media-body">
+											<h3 class="texto-left title-left">HTML Templates</h3>
+											<p class="texto-left">We provide a variety of templates for you at no cost. Please spread a word about<a href="https://plus.google.com/+tooplate" target="_parent">Tooplate</a> website. Thank you.</p>	
+										</div>
 									</div>
-								</div>
-							</div>	
-							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
-								<div class="media tm-bg-transparent-black tm-border-white">
-									<i class="fas fa-map-pin mr-4 tm-icon-circled tm-icon-media"></i>	
-									<div class="media-body">
-										<h3>Free Images</h3>
-										<p>Photos by <a href="https://unsplash.com" target="_blank">Unsplash.com</a> website, ac ornare arcu finibus sed. Aenean ultrices nisi sit amet facilisis viverra.</p>	
+								</div>	
+								<div class="colunas mb-4">
+									<div class="cai media tm-bg-transparent-black tm-border-white">
+										<i class="icone fas fa-map-pin mr-4 tm-icon-circled tm-icon-media"></i>	
+										<div class="media-body">
+											<h3 class="texto-left title-left">Free Images</h3>
+											<p class="texto-left">Photos by <a href="https://unsplash.com" target="_blank">Unsplash.com</a> website, ac ornare arcu finibus sed. Aenean ultrices nisi sit amet facilisis viverra.</p>	
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
-								<div class="media tm-bg-transparent-black tm-border-white">
-									<i class="fab fa-fly mr-4 tm-icon-circled tm-icon-media"></i>
-									<div class="media-body">
-										<h3>Phasellus eleifend</h3>
-										<p>Phasellus feugiat scelerisque sapien, ac ornare arcu finibus sed. Aenean ultrices nisi sit amet facilisis viverra.</p>		
+								<div class="row">
+									<div class="colunas mb-4">
+										<div class="cai media tm-bg-transparent-black tm-border-white">
+											<i class="icone fab fa-fly mr-4 tm-icon-circled tm-icon-media"></i>
+											<div class="media-body">
+												<h3 class="texto-left title-left">Phasellus eleifend</h3>
+												<p class="texto-left">Phasellus feugiat scelerisque sapien, ac ornare arcu finibus sed. Aenean ultrices nisi sit amet facilisis viverra.</p>		
+											</div>
+										</div>
 									</div>
-								</div>
-							</div>
-							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
-								<div class="media tm-bg-transparent-black tm-border-white">
-									<i class="fab fa-linode mr-4 tm-icon-circled tm-icon-media"></i>
-									<div class="media-body">
-										<h3>Phasellus eleifend</h3>
-										<p>Phasellus feugiat scelerisque sapien, ac ornare arcu finibus sed. Aenean ultrices nisi sit amet facilisis viverra.</p>	
-									</div>
-								</div>
-							</div>			          		
-						</div>						               
-					</section>
-
+									<div class="colunas mb-4">
+										<div class="cai media tm-bg-transparent-black tm-border-white">
+											<i class="icone fab fa-linode mr-4 tm-icon-circled tm-icon-media"></i>
+											<div class="media-body">
+												<h3 class="texto-left title-left">Phasellus eleifend</h3>
+												<p class="texto-left">Phasellus feugiat scelerisque sapien, ac ornare arcu finibus sed. Aenean ultrices nisi sit amet facilisis viverra.</p>	
+											</div>
+										</div>
+									</div>	
+								</div>			          		
+							</div>						               
+						</section>
+					</div>	
                     <!-- section 4 -->
 					<section id="tm-section-4" class="tm-section">
-						<div class="tm-bg-transparent-black tm-contact-box-pad">
+						<!-- ... (Conteúdo da seção 4) ... -->
+						<div class="margin-tp tm-bg-transparent-black tm-contact-box-pad">
 							<div class="row mb-4">
 								<div class="col-sm-12">
 									<header><h2 class="tm-text-shadow">Contact Us</h2></header>
